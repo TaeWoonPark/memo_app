@@ -2,10 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use LiveWire\Volt\Volt;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-
+// 一覧ページ
+Volt::route('/memos', 'memos.index')->name('memos.index');
 // 詳細ページ
-volt::route('/memos/{memo}', 'memos.show')->name('me mos.show');
+Volt::route('/memos/{memo}', 'memos.show')->name('memos.show');
