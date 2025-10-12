@@ -2,7 +2,9 @@
 
 use function Livewire\Volt\{state};
 use App\Models\Memo;
-state(['memos' => fn() => Memo::all()]);
+state(['memos' => fn() => Memo::orderBy('priority', 'desc')->get()]);
+// 一覧画面を優先度順（高→低）で並び変えて表示してください。
+
 
 $create = function () {
     return redirect()->route('memos.create');
