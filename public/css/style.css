@@ -1,0 +1,7 @@
+/* classがerrorの項目に対して、文字の色を赤くするというコードを記述 */
+
+.error {
+    color: red;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+}
