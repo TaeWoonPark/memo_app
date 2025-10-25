@@ -22,14 +22,3 @@ npm install
 
 echo "Building frontend assets..."
 npm run build
-
-
-
-
-
-
-
-
-
-
-
